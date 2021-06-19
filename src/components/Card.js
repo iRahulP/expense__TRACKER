@@ -1,10 +1,12 @@
 import React from 'react'
 import './Card.css';
 
-function Card() {
+function Card(props) {
+
+    const classes = 'card ' + props.className;
     return (
-        <div className="card">
-            
+        <div className={classes}>
+            {props.children}
         </div>
     )
 }
